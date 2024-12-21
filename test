@@ -1,0 +1,20 @@
+my_list = []
+my_list
+
+username = input("введите имя пользователя ")
+print(" имя пользователя:",username)
+title=[]
+for i in range(3) :
+    title.append(input( f"введите заголовок заметки {i+1}"))
+content = input("введите описание заметки ")
+print("описание заметки:", content)
+status = input("введите статус заметки ")
+print("статус заметки:", status)
+created_date = input("дата создания заметки в формате день и месяц, например 10.11 ")
+print("дата создания заметки:",created_date)
+type(float(created_date))
+issue_date = input("дата истечения заметки (дедлайн) в формате день и месяц, например 10.12 ")
+print("дата истечения заметки", issue_date)
+type(float(issue_date))
+note = [username, title, content, status, created_date, issue_date]
+print(note)
